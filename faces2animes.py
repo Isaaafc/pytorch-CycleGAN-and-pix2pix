@@ -41,5 +41,5 @@ else:
     in_split = os.path.splitext(os.path.basename(args.infile))
     outfile = args.outfile if args.outfile is not None else '{}_out.png'.format(in_split[0])
 
-    shutil.move(os.path.join('results/faces2animes/test_latest/images', '{}_fake_B.png'.format(in_split[0])), outfile)
-    shutil.rmtree('results/faces2animes/test_latest')
+    shutil.move(os.path.join('./results/faces2animes/test_latest/images', '{}_fake_B.png'.format(in_split[0])), outfile)
+    shutil.rmtree('./results/faces2animes/test_latest')
